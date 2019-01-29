@@ -22,7 +22,7 @@
             app:layout_constraintBottom_toBottomOf="parent">
         <TextView
                 android:textAllCaps="true"
-                android:textSize="28sp"
+                android:textSize="20sp"
                 android:layout_weight="2"
                 android:text="@string/histrory_view_text"
                 android:layout_width="match_parent"
@@ -67,7 +67,7 @@
                     android:text="7"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="inputNumberOperation"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_8"
@@ -75,7 +75,7 @@
                     android:text="8"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="inputNumberOperation"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_9"
@@ -83,7 +83,7 @@
                     android:text="9"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="inputNumberOperation"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_divide"
@@ -107,7 +107,7 @@
                     android:text="4"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="inputNumberOperation"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_5"
@@ -115,7 +115,7 @@
                     android:text="5"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="inputNumberOperation"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_6"
@@ -123,7 +123,7 @@
                     android:text="6"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="inputNumberOperation"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_multiply"
@@ -147,7 +147,7 @@
                     android:text="1"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="inputNumberOperation"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_2"
@@ -155,7 +155,7 @@
                     android:text="2"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="inputNumberOperation"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_3"
@@ -163,7 +163,7 @@
                     android:text="3"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="inputNumberOperation"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_minus"
@@ -195,7 +195,7 @@
                     android:text="0"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="inputNumberOperation"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_point"
@@ -203,7 +203,7 @@
                     android:text="."
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="printDot"/>
+                    android:onClick="getPrintDotOperation"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_plus"
@@ -227,7 +227,7 @@
                     android:text="A"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="deleteLastChar"/>
+                    android:onClick="getDeleteLastChar"/>
             <Button
                     android:layout_weight="15"
                     android:id="@+id/button_calc_result"

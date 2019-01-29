@@ -40,12 +40,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun getOperationCancel(view: View) {
-        resetOperation()
+        getResetOperation()
         calc_input_textView.text = "0"
         calc_result_textView.text = ""
     }
 
-    private fun resetOperation(){
+    private fun getResetOperation(){
         currentOperation = null
         calc_operation_textView.text = ""
     }
@@ -55,14 +55,14 @@ class MainActivity : AppCompatActivity() {
         try {
             calc_result_textView.text = "= ${calculateOperation(parseInput(), previousResult)}"
             commitOperation()
-            resetOperation()
+            getResetOperation()
         }
         catch (e : Exception){
 
         }
     }
 
-    fun printDot(view: View) {
+    fun getPrintDotOperation(view: View) {
         if (!dotPrinted) {
             printOneSymbol('.')
             dotPrinted = true
@@ -70,12 +70,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     @SuppressLint("SetTextI18n")
-    fun inputNumber(view: View) {
+    fun inputNumberOperation(view: View) {
         printOneSymbol(findViewById<Button>(view.id).text[0])
         calc_result_textView.text = calculateOperation(parseInput(), previousResult)
     }
 
-    fun deleteLastChar(view: View) {
+    fun getDeleteLastChar(view: View) {
         try {
             if (calc_input_textView.text.last() == '.') dotPrinted = false
             calc_input_textView.text = calc_input_textView.text.dropLast(1)
