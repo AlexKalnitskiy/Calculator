@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".activity.MainActivity">
     <LinearLayout
             android:id="@+id/main_activity_layout"
             android:orientation="vertical"
@@ -22,7 +22,7 @@
             app:layout_constraintBottom_toBottomOf="parent">
         <TextView
                 android:textAllCaps="true"
-                android:textSize="28sp"
+                android:textSize="20sp"
                 android:layout_weight="2"
                 android:text="@string/histrory_view_text"
                 android:layout_width="match_parent"
@@ -47,6 +47,7 @@
                     android:id="@+id/calc_input_textView"/>
         </LinearLayout>
         <TextView
+                android:textColor="@color/colorPrimaryDark"
                 android:textAllCaps="true"
                 android:textSize="32sp"
                 android:layout_weight="2"
@@ -64,26 +65,26 @@
                     android:layout_weight="1"
                     android:id="@+id/button_calc_7"
                     android:textSize="24sp"
-                    android:text="7"
+                    android:text="@string/number_7"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="onCharInput"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_8"
                     android:textSize="24sp"
-                    android:text="8"
+                    android:text="@string/number_8"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="onCharInput"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_9"
                     android:textSize="24sp"
-                    android:text="9"
+                    android:text="@string/number_9"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="onCharInput"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_divide"
@@ -91,7 +92,7 @@
                     android:text="/"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="getOperationDivide"/>
+                    android:onClick="onOperationInput"/>
         </LinearLayout>
 
         <LinearLayout
@@ -104,26 +105,26 @@
                     android:layout_weight="1"
                     android:id="@+id/button_calc_4"
                     android:textSize="24sp"
-                    android:text="4"
+                    android:text="@string/number_4"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="onCharInput"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_5"
                     android:textSize="24sp"
-                    android:text="5"
+                    android:text="@string/number_5"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="onCharInput"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_6"
                     android:textSize="24sp"
-                    android:text="6"
+                    android:text="@string/number_6"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="onCharInput"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_multiply"
@@ -131,7 +132,7 @@
                     android:text="*"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="getOperationMultiply"/>
+                    android:onClick="onOperationInput"/>
         </LinearLayout>
 
         <LinearLayout
@@ -144,26 +145,26 @@
                     android:layout_weight="1"
                     android:id="@+id/button_calc_1"
                     android:textSize="24sp"
-                    android:text="1"
+                    android:text="@string/number_1"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="onCharInput"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_2"
                     android:textSize="24sp"
-                    android:text="2"
+                    android:text="@string/number_2"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="onCharInput"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_3"
                     android:textSize="24sp"
-                    android:text="3"
+                    android:text="@string/number_3"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="onCharInput"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_minus"
@@ -171,7 +172,7 @@
                     android:text="-"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="getOperationMinus"/>
+                    android:onClick="onOperationInput"/>
         </LinearLayout>
 
         <LinearLayout
@@ -187,23 +188,23 @@
                     android:text="C"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="getOperationCancel"/>
+                    android:onClick="onClearInput"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_0"
                     android:textSize="24sp"
-                    android:text="0"
+                    android:text="@string/number_0"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="inputNumber"/>
+                    android:onClick="onCharInput"/>
             <Button
                     android:layout_weight="1"
-                    android:id="@+id/button_calc_point"
+                    android:id="@+id/button_calc_dot"
                     android:textSize="24sp"
-                    android:text="."
+                    android:text="@string/dot"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="printDot"/>
+                    android:onClick="onCharInput"/>
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_plus"
@@ -211,7 +212,7 @@
                     android:text="+"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="getOperationPlus"/>
+                    android:onClick="onOperationInput"/>
         </LinearLayout>
 
         <LinearLayout
@@ -227,7 +228,7 @@
                     android:text="A"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="deleteLastChar"/>
+                    android:onClick="onDeleteInput"/>
             <Button
                     android:layout_weight="15"
                     android:id="@+id/button_calc_result"
@@ -235,7 +236,7 @@
                     android:textSize="24sp"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:onClick="getOperationResult"/>
+                    android:onClick="onResultInput"/>
         </LinearLayout>
 
     </LinearLayout>
