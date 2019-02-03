@@ -68,11 +68,7 @@
                     android:text="@string/number_7"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-<<<<<<< HEAD
                     android:onClick="onCharInput"/>
-=======
-                    android:onClick="inputNumberOperation"/>
->>>>>>> 9bf9c8c46a77dacf0345f9eec5ab1d572c524c7a
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_8"
@@ -80,11 +76,7 @@
                     android:text="@string/number_8"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-<<<<<<< HEAD
                     android:onClick="onCharInput"/>
-=======
-                    android:onClick="inputNumberOperation"/>
->>>>>>> 9bf9c8c46a77dacf0345f9eec5ab1d572c524c7a
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_9"
@@ -92,11 +84,7 @@
                     android:text="@string/number_9"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-<<<<<<< HEAD
                     android:onClick="onCharInput"/>
-=======
-                    android:onClick="inputNumberOperation"/>
->>>>>>> 9bf9c8c46a77dacf0345f9eec5ab1d572c524c7a
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_divide"
@@ -120,11 +108,7 @@
                     android:text="@string/number_4"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-<<<<<<< HEAD
                     android:onClick="onCharInput"/>
-=======
-                    android:onClick="inputNumberOperation"/>
->>>>>>> 9bf9c8c46a77dacf0345f9eec5ab1d572c524c7a
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_5"
@@ -132,11 +116,7 @@
                     android:text="@string/number_5"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-<<<<<<< HEAD
                     android:onClick="onCharInput"/>
-=======
-                    android:onClick="inputNumberOperation"/>
->>>>>>> 9bf9c8c46a77dacf0345f9eec5ab1d572c524c7a
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_6"
@@ -144,11 +124,7 @@
                     android:text="@string/number_6"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-<<<<<<< HEAD
                     android:onClick="onCharInput"/>
-=======
-                    android:onClick="inputNumberOperation"/>
->>>>>>> 9bf9c8c46a77dacf0345f9eec5ab1d572c524c7a
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_multiply"
@@ -172,11 +148,7 @@
                     android:text="@string/number_1"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-<<<<<<< HEAD
                     android:onClick="onCharInput"/>
-=======
-                    android:onClick="inputNumberOperation"/>
->>>>>>> 9bf9c8c46a77dacf0345f9eec5ab1d572c524c7a
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_2"
@@ -184,11 +156,7 @@
                     android:text="@string/number_2"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-<<<<<<< HEAD
                     android:onClick="onCharInput"/>
-=======
-                    android:onClick="inputNumberOperation"/>
->>>>>>> 9bf9c8c46a77dacf0345f9eec5ab1d572c524c7a
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_3"
@@ -196,11 +164,7 @@
                     android:text="@string/number_3"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-<<<<<<< HEAD
                     android:onClick="onCharInput"/>
-=======
-                    android:onClick="inputNumberOperation"/>
->>>>>>> 9bf9c8c46a77dacf0345f9eec5ab1d572c524c7a
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_minus"
@@ -232,11 +196,7 @@
                     android:text="@string/number_0"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-<<<<<<< HEAD
                     android:onClick="onCharInput"/>
-=======
-                    android:onClick="inputNumberOperation"/>
->>>>>>> 9bf9c8c46a77dacf0345f9eec5ab1d572c524c7a
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_dot"
@@ -244,11 +204,7 @@
                     android:text="@string/dot"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-<<<<<<< HEAD
                     android:onClick="onCharInput"/>
-=======
-                    android:onClick="getPrintDotOperation"/>
->>>>>>> 9bf9c8c46a77dacf0345f9eec5ab1d572c524c7a
             <Button
                     android:layout_weight="1"
                     android:id="@+id/button_calc_plus"
@@ -272,11 +228,7 @@
                     android:text="A"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-<<<<<<< HEAD
                     android:onClick="onDeleteInput"/>
-=======
-                    android:onClick="getDeleteLastChar"/>
->>>>>>> 9bf9c8c46a77dacf0345f9eec5ab1d572c524c7a
             <Button
                     android:layout_weight="15"
                     android:id="@+id/button_calc_result"
