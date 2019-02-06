@@ -1,6 +1,5 @@
 package com.example.calculator.model
 
-import java.lang.Exception
 import kotlin.math.roundToInt
 
 class CalculatorModel {
@@ -57,8 +56,10 @@ class CalculatorModel {
     }
 
     private fun addDot() {
-        if (!dotPrinted) dotPrinted = true
-        addSymbol('.')
+        if (!dotPrinted) {
+            dotPrinted = true
+            addSymbol('.')
+        }
     }
 
     private fun commitOperation() {

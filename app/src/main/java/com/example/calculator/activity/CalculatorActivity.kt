@@ -1,14 +1,15 @@
 package com.example.calculator.activity
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.view.View
+import com.example.calculator.R
+import com.example.calculator.model.CalculatorModel
 import com.example.calculator.presenter.CalculatorPresenter
 import com.example.calculator.presenter.CalculatorPresenterInterface
-import com.example.calculator.R
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), CalculatorActivityInterface {
+class CalculatorActivity : AppCompatActivity(), CalculatorActivityInterface {
 
     private lateinit var presenter: CalculatorPresenterInterface
 
@@ -29,11 +30,11 @@ class MainActivity : AppCompatActivity(), CalculatorActivityInterface {
     }
 
     fun onCharInput(view: View){
-        presenter.onNumberInput(view.id)
+        presenter.onNumberInput(KeyMap[view.id]!!)
     }
 
     fun onOperationInput(view: View){
-        presenter.onOperationInput(view.id)
+        presenter.onOperationInput(OperationsMap[view.id]!!)
     }
     fun onClearInput(view: View) {
         presenter.onClearInput()
@@ -48,6 +49,6 @@ class MainActivity : AppCompatActivity(), CalculatorActivityInterface {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        presenter = CalculatorPresenter(this)
+        presenter = CalculatorPresenter(this, CalculatorModel())
     }
 }
