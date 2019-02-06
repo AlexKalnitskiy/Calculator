@@ -29,20 +29,23 @@ class CalculatorActivity : AppCompatActivity(), CalculatorActivityInterface {
         calculation_history_text_view.text = s
     }
 
-    fun onCharInput(view: View){
-        presenter.onNumberInput(KeyMap[view.id]!!)
+    fun onCharInput(view: View) {
+        presenter.onNumberInput(getKeyMap()[view.id]!!)
     }
 
-    fun onOperationInput(view: View){
-        presenter.onOperationInput(OperationsMap[view.id]!!)
+    fun onOperationInput(view: View) {
+        presenter.onOperationInput(getOperationsMap()[view.id]!!)
     }
+
     fun onClearInput(view: View) {
         presenter.onClearInput()
     }
-    fun onDeleteInput(view: View){
+
+    fun onDeleteInput(view: View) {
         presenter.onDeleteInput()
     }
-    fun onResultInput(view: View){
+
+    fun onResultInput(view: View) {
         presenter.onResultInput()
     }
 
